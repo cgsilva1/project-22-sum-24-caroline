@@ -136,7 +136,7 @@ hr {
     align-items: center;
 }
 
-.user1WorkConatiner{
+.user1InfoConatiner{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,6 +146,15 @@ hr {
 
 .workItem{
     width: 550px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.eduItem{
+    width: 400px;
     height: 250px;
     margin: 10px;
     text-align: center;
