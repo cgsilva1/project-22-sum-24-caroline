@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!--    NAV BAR    -->
     <header class="nav-bar">
         <div class="nav-content">
             <a href="/">
@@ -28,27 +29,94 @@
                 </div>
             </a>
         </div>
+        <!-- add in nav bar buttons to direct to certain place on the page for intro, work expeirence, hobbies, education-->
     </header>
 
+    <!--    INTRO + ABOUT ME - START     -->
     <div class = "user1Container">
-        <div class = "item"  style = "margin-top: 100px">
-            <div class = "name">
+        <div class = "item"  style = "margin-top: 160px">
+            <div class = "title">
                 <h1>Hello, it's me Caroline Silva</h1> <b>
             </div>
-            <div class = "aboutMe">
+            <div class = "text">
              <p>Caroline Silva is a junior at the University of Southern California pursing a <br> bachelors degree
-             in Computer Science and Business Administration. </p>
+             in Computer Science and Business Administration. Outside of class you can find Caroline playiing soccer or on a hike.</p>
              </DIV>
         </div>
         <div class = "item">
             <div id="profile-picture" class="profile-picture">
-                <img src="./static/img/profilePicture.jpg">
+                <img style = "height: 300px; width: 300px; border-radius: 100%;" src="./static/img/profilePicture.jpg">
             </div>
         </div>
     </div>
+    <!--    INTRO + ABOUT ME - END     -->
 
-    <h3>Previous Work Experiences</h3>
-     
+    <!--    WORK EXPERIENCE - START    -->
+    <br><br><br><br><hr><br><br><br><br><br>
+
+    <h2 class = "title" style = "text-align: center">Previous Work Experiences</h2>
+    <div class = "user1WorkConatiner">
+        <div class = "workItem">
+            <strong style = "font-size: 18px"><a href="https://www.cs.usc.edu/students/information-for-graders-and-course-producers/">USC Introduction to Software Development</a></strong>
+            <br><em> <a href = "https://viterbi-web.usc.edu/~adamchik/201/syllabus.pdf"> Course Producer CSCI 201 </a></em>
+            <br> <div class = "date">June 2022 - August 2022</div>
+            <ul> 
+              <div class = "text">
+                <li>Lead bi-weekly labs on current course materials including Multithreading, Concurrency, mySQL, JDBC, Network Programming</li>
+                <li>Host 10 hours of weekly office hours to support students debug code and understand software development concepts</li>
+                <li>Design homeowork/lab assignments, monitor piazza discussion posts, and mentor students' final group projects </li>
+              </div>
+            </ul>
+        </div>
+        <div class = "workItem">
+            <strong style = "font-size: 18px"><a href="https://mlh.io/">Major League Hacking</a></strong>
+            <br><em> <a href = "https://fellowship.mlh.io/"> Production Engineering Fellow </a></em>
+            <br> <div class = "date">June 2022 - August 2022</div>
+            <ul> 
+              <div class = "text">
+                <li>Work collaborativley with team memebrs on hackathon projects under mentorship from Meta Production Engineers</li>
+                <li>Develop skills needed to keep products like Facebook, WhatsApp, Instagram, and Oculus running</li>
+                <li>Complete Linux Foundation Training & Certification's LFS201 – Essentials of System Administration training course which 
+                    covers how to administer, configure and upgrade Linux systems, along with the tools and concepts necessary to efficiently 
+                    build and manage a production Linux infrastructure</li>
+              </div>
+            </ul>
+        </div>
+
+        <div class = "break"></div>
+
+        <div class = "workItem">
+            <strong style = "font-size: 18px"><a href="https://ripplematch.com/">Ripple Match</a></strong>
+            <br><em> Leadership Development Intern</em>
+            <br> <div class = "date">September 2021 - December 2021</div>
+            <ul> 
+              <div class = "text">
+                <li>Leverage various growth strategies and tools including social media,
+                    email marketing, presentations, and peer and faculty member networking to
+                    grow user base</li>
+                <li>Strategically assess growth and performance metrics to improve, change,
+                    and help design new growth strategies</li>
+              </div>
+            </ul>
+        </div>
+        <div class = "workItem">
+            <strong style = "font-size: 18px"><a href="https://www.miamibreakersfc.com/">Miami Breakers FC</a></strong>
+            <br><em> Head of Recreational Administration </em>
+            <br> <div class = "date">May 2019 - March 2020</div>
+            <ul>
+              <div class = "text">
+                <li>Implemented new methods for monthly payments via Microsoft Excel</li>
+                <li>Calculated and allocated monthly payroll to employees</li>
+                <li>Communicated with parents regarding scheduling, payments, and other
+                    relevant questions</li>
+              </div>
+            </ul>
+        </div>
+        <!--Make it so in the flex box its 2 rows and 2 colums (hwo to i make sure i go ot the next row)-->
+    </div>
+
+    <!--    WORK EXPERIENCE - END    -->
+    <br><br><br><br><hr><br><br><br><br><br>
 
 </body>
 </html>
