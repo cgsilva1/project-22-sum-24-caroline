@@ -17,3 +17,7 @@ def user1():
 @app.route('/user2')
 def user2():
     return render_template('userPage2.html', title="Sree Info", url=os.getenv("URL"))
+
+@app.route('/sree_hobbies')
+def caroline_hobbies():
+    return render_template('sree_hobbies.html', title="sree's Hobbies", url=os.getenv("URL"))
