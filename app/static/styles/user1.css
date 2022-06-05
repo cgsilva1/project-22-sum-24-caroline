@@ -162,6 +162,23 @@ hr {
     align-items: center;
 }
 
+.user1HobbyConatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.hobbyItem{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .break {
     flex-basis: 100%;
     height: 0;

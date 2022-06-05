@@ -14,6 +14,10 @@ def index():
 def user1():
     return render_template('userPage1.html', title="Carolines Info", url=os.getenv("URL"))
 
-@app.route('/<user2>')
-def user2(user2):
+@app.route('/user2')
+def user2():
     return render_template('userPage2.html', title="Sree Info", url=os.getenv("URL"))
+
+@app.route('/caroline_hobbies')
+def caroline_hobbies():
+    return render_template('caroline_hobbies.html', title="Caroline's Hobbies", url=os.getenv("URL"))
