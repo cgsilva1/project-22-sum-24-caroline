@@ -12,7 +12,7 @@ def index():
 
 @app.route('/user1')
 def user1():
-    return render_template('userPage1.html', title="Carolines Info", url=os.getenv("URL"))
+    return render_template('workex_ed_caroline.html', title="Carolines Info", url=os.getenv("URL"))
 
 @app.route('/user2')
 def user2():
@@ -20,7 +20,7 @@ def user2():
 
 @app.route('/caroline_hobbies')
 def caroline_hobbies():
-    return render_template('caroline_hobbies.html', title="Caroline's Hobbies", url=os.getenv("URL"))
+    return render_template('hobbies_template_caroline.html', title="Caroline's Hobbies", url=os.getenv("URL"))
 
 @app.route('/sree_hobbies')
 def sree_hobbies():
