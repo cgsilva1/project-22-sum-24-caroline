@@ -1,6 +1,6 @@
 /* userPage1 Style */
 p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+    font-family: Georgia, serif;
 }
 
 a:link { text-decoration: none; color: black;}
@@ -21,7 +21,7 @@ body {
     background-size: cover;
     width: auto; 
     overflow-x: hidden;
-    font-family: "Roboto", serif;
+    font-family: Georgia, serif;
     margin: 0px;
 
 }
@@ -30,6 +30,11 @@ hr {
     border: none;
     border-top: 5px dotted 	#787878;
     width: 70%;
+}
+
+li{
+    text-align: left;
+    line-height: 20px;
 }
 
 .nav-bar {
