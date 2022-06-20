@@ -10,7 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template('workex_ed_caroline.html', title="MLH Fellow", url=os.getenv("URL"))
 
+@app.route('/hobbies')
+def hobbies():
+    return render_template('hobbies_template.html', title="Hobbies", url=os.getenv("URL"))
 
-@app.route('/caroline_hobbies')
-def caroline_hobbies():
-    return render_template('hobbies_template_caroline.html', title="Caroline's Hobbies", url=os.getenv("URL"))
+@app.route('/projects')
+def projects():
+    return render_template('projects.html', title="Projects", url=os.getenv("URL"))
