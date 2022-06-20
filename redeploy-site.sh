@@ -7,7 +7,7 @@ tmux kill-server
 cd project-22-SUM-24-CAROLINE
 
 #make sure ou have latest upates of git repository
-git fetch && git reset origin/main --hard
+#git fetch && git reset origin/main --hard
 
 #enter python virtual environemnt & install dependencies 
 source python3-virtualenv/bin/activate
