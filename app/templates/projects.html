@@ -16,48 +16,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link lang='sass' rel="stylesheet" href="./static/styles/user1.css">
-    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ Project Portfolio }}</title> 
+    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon'>
+    <title>Projects</title> 
 </head>
 
 <body>
- <!--    NAV BAR    -->
- <header class = "nav-bar">
-    <div class="nav-content">
-       <a href="/">
-           <div style = "align: left;" class="nav-logo">
-               <img src="./static/img/logo.svg" />
-           </div>
-       </a>
-   </div> 
-   <!-- add in nav bar buttons to direct to certain place on the page for intro, work expeirence, hobbies, education-->
+<!--    NAV BAR    -->
+<header class = "nav-bar">
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="navContainer">
+            <a style = "margin-left: 50px; font-size: 25px;" href="/">Caroline Silva</a>
+                    <a style = "margin-left: 40px;" href="#about">About</a>
+                   
+                    <a style = "margin-left: 40px;" href="#we">Work experience</a>
+                 
+                    <a style = "margin-left: 40px;" href="#ed">Education</a>
 
+                    <a style = "margin-left: 40px;" href="/hobbies">Hobbies</a>
 
-<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-   <div class="navContainer">
-       <a style = "margin-left: 50px; font-size: 25px;" href="/">Caroline Silva</a>
-           
-           <div class="navbar-nav">
-               
-               <a style = "margin-left: 40px;" href="#about">About</a>
-              
-               <a style = "margin-left: 40px;" href="#we">Work experience</a>
-            
-               <a style = "margin-left: 40px;" href="#ed">Education</a>
+                    <a style = "margin-left: 40px;" href="/projects">Projects</a>
 
-               <a style = "margin-left: 40px;" href="/hobbies">Hobbies</a>
+                    <a style = "margin-left: 40px;" href="#map">Map</a>
 
-               <a style = "margin-left: 40px;" href="/projects">Projects</a>
-
-               <a style = "margin-left: 40px;" href="#map">Map</a>
-           </div> 
-   </div>
-</nav>
+                    <a style = "margin-left: 40px;" href="/contact">Contact</a>
+        </div>
+    </nav>
 </header>
 <!--   END NAV BAR   -->
 
-<h2 class = "title" style = "text-align: center;">Caroline's Hobbies</h2>
-    <strong><p class = "title" style = "text-align: center">In Caroline's free time she likes to: </p></strong>
+<h2 class = "title" style = "text-align: center;">Caroline's Projects</h2>
     <br><br>
     
     {% block projects %}
