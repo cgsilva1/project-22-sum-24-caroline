@@ -4,7 +4,7 @@
 tmux kill-server
 
 #cd into project folder 
-cd project-22-SUM-24-CAROLINE
+cd project-22-sum-24-caroline
 
 #make sure ou have latest upates of git repository
 git fetch && git reset origin/main --hard
