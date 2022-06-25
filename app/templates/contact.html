@@ -45,14 +45,7 @@
     </header>
     <!--   END NAV BAR   -->
 
-    <h2>Contact Information</h2>
-    <p><strong>Phone Number:</strong> 305-322-4250</p>
-    <p><strong>Email:</strong> cgsilva@usc.edu</p>
-    <p><strong>Address:</strong> 530 W. 27th St. Los Angeles, CA. 90007</p>
-
-    <hr size="3" noshade>
-
-    <h3>Get in touch with me: </h3>
+   <!-- <h3>Get in touch with me: </h3>
     <form action="mailto:cgsilva@usc.edu" method="post" enctype="text/plain">
       <label>Your Name: </label>
       <input type="text" name="Your Name" value=""><br>
@@ -68,6 +61,35 @@
       <input type="file" name="Files"><br>
       <input type="Submit" name="">
     </form>
+-->
+
+        <section class="contact">
+            <div class="cont contactContainer">
+                <div class="contact-text">
+                    <p style = "margin: 0; padding: 5px;">Want to get in touch with me? </p>
+                    <h2 style = "margin: 0; padding: 0; margin-bottom: 5px;">Caroline Silva</h2>
+                    <h6 style = "margin: 0; padding: 0;">Phone</h6>
+                    <p class="phone" style = "margin: 0; padding: 0; margin-bottom: 5px; font-size: 20px;">(305)-322-4250</p>
+                    <h6 style = "margin: 0; padding: 0;">Email</h6>
+                    <p class="mail" style = "margin: 0; padding: 0; font-size: 20px;">cgsilva@usc.edu</p>
+                </div>
+                <div class="contact-form">
+                    <form action="mailto:cgsilva@usc.edu" method="post" enctype="text/plain">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="date">Date</label>                       
+                        <input type="date" name="Date" value="">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                        <label for="file"> Supporting documents </label>
+                        <input type="file" name="Files">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
 
 </body>
 </html>
