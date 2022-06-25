@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:description" content="My Personal Portfolio">
+    <meta property="og:url" content="{{ url }}">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link lang='sass' rel="stylesheet" href="./static/styles/user1.css">
+    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+    <title>Contact Me Page</title> 
+    
+</head>
+    
+<body>
+        <!--    NAV BAR    -->
+        <header class = "nav-bar">
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="navContainer">
+                <a style = "margin-left: 50px; font-size: 25px;" href="/">Caroline Silva</a>
+                        <a style = "margin-left: 40px;" href="#about">About</a>
+                       
+                        <a style = "margin-left: 40px;" href="#we">Work experience</a>
+                     
+                        <a style = "margin-left: 40px;" href="#ed">Education</a>
+    
+                        <a style = "margin-left: 40px;" href="/hobbies">Hobbies</a>
+    
+                        <a style = "margin-left: 40px;" href="/projects">Projects</a>
+    
+                        <a style = "margin-left: 40px;" href="#map">Map</a>
+    
+                        <a style = "margin-left: 40px;" href="/contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!--   END NAV BAR   -->
+
+   <!-- <h3>Get in touch with me: </h3>
+    <form action="mailto:cgsilva@usc.edu" method="post" enctype="text/plain">
+      <label>Your Name: </label>
+      <input type="text" name="Your Name" value=""><br>
+      <label>Your Email: </label>
+      <input type="Email" name="Your Email" value=""><br>
+      <label>Phone Number: </label>
+      <input type="tel" name="Your Phone" value=""><br>
+      <label>Date: </label>
+      <input type="date" name="Date" value=""><br>
+      <label>Message: </label><br>
+      <textarea name="Your Message" rows="10" cols="30"></textarea><br>
+      <label>Supporting documents: </label>
+      <input type="file" name="Files"><br>
+      <input type="Submit" name="">
+    </form>
+-->
+
+        <section class="contact">
+            <div class="cont contactContainer">
+                <div class="contact-text">
+                    <p style = "margin: 0; padding: 5px;">Want to get in touch with me? </p>
+                    <h2 style = "margin: 0; padding: 0; margin-bottom: 5px;">Caroline Silva</h2>
+                    <h6 style = "margin: 0; padding: 0;">Phone</h6>
+                    <p class="phone" style = "margin: 0; padding: 0; margin-bottom: 5px; font-size: 20px;">(305)-322-4250</p>
+                    <h6 style = "margin: 0; padding: 0;">Email</h6>
+                    <p class="mail" style = "margin: 0; padding: 0; font-size: 20px;">cgsilva@usc.edu</p>
+                </div>
+                <div class="contact-form">
+                    <form action="mailto:cgsilva@usc.edu" method="post" enctype="text/plain">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="date">Date</label>                       
+                        <input type="date" name="Date" value="">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                        <label for="file"> Supporting documents </label>
+                        <input type="file" name="Files">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+</body>
+</html>

@@ -19,67 +19,29 @@
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title> 
 
-    <!-- SREE HEADER
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link lang='sass' rel="stylesheet" href="./static/styles/user1.css">
-    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-
-    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-  
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    -->
 </head>
 
 <body>
     <!--    NAV BAR    -->
     <header class = "nav-bar">
-         <div class="nav-content">
-            <a href="/">
-                <div style = "align: left;" class="nav-logo">
-                    <img src="./static/img/logo.svg" />
-                </div>
-            </a>
-        </div> 
-        <!-- add in nav bar buttons to direct to certain place on the page for intro, work expeirence, hobbies, education-->
-    
-
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="navContainer">
             <a style = "margin-left: 50px; font-size: 25px;" href="/">Caroline Silva</a>
-            <!--<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button> -->
-                
-                <div class="navbar-nav">
-                    <a style = "margin-left: 320px;" class="nav-link js-scroll active" href="{{ url_for('index') }}">Home</a>
-                    
-                    <a style = "margin-left: 40px;" class="nav-link js-scroll" href="#about">About</a>
+                    <a style = "margin-left: 40px;" href="#about">About</a>
                    
-                    <a style = "margin-left: 40px;" class="nav-link js-scroll" href="#we">Work experience</a>
+                    <a style = "margin-left: 40px;" href="#we">Work experience</a>
                  
-                    <a style = "margin-left: 40px;" class="nav-link js-scroll" href="#ed">Education</a>
+                    <a style = "margin-left: 40px;" href="#ed">Education</a>
 
-                    <a style = "margin-left: 40px;"class="nav-link js-scroll" href="/caroline_hobbies">Hobbies</a>
+                    <a style = "margin-left: 40px;" href="/hobbies">Hobbies</a>
 
-                    <a style = "margin-left: 40px;" class="nav-link js-scroll" href="#map">Map</a>
-                </div> 
+                    <a style = "margin-left: 40px;" href="/projects">Projects</a>
+
+                    <a style = "margin-left: 40px;" href="#map">Map</a>
+
+                    <a style = "margin-left: 40px;" href="/contact">Contact</a>
+
+                    <a style = "margin-left: 40px;" href="/timeline">Timeline</a>
         </div>
     </nav>
 </header>
@@ -88,7 +50,7 @@
     <!--    INTRO + ABOUT ME - START     -->
 <section id="about" class="about-mf sect-pt4 route text-light bg-dark">
 <br><br><br><br><br>
-    <div class = "user1Container">
+    <div class = "aboutMeContainer">
         <div class = "item"  style = "margin-top: 160px">
             <div class = "title">
                 <h1>Hello, it's me Caroline Silva</h1> <b>
@@ -98,7 +60,8 @@
              in Computer Science and Business Administration. Outside of class you can find Caroline playing soccer or on a hike.</p>
             <a href = "https://www.linkedin.com/in/caroline-silva-2988571b3" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px; margin-right: 10px;"></i></a>
             <a href = "https://github.com/cgsilva1" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></i></a>
-            <!-- could add a contact me link to redirect to page to send me an email-->
+            <!-- add a contact me link to redirect to page to send me an email-->
+            <!-- add a icon for pdf of resume-->
             </div>
         </div>
         <div class = "item">
@@ -124,7 +87,7 @@
 
     <!--    EDUCATION - START    -->
     <br><br><br><br><br><br><hr><br><br><br>
-<section id="ed" class="portfolio-mf sect-pt4 route text-dark bg-white">
+<section id="ed" class="portfolio-mf sect-pt4 route">
     <br><br><br><br><br><br><br>
     <h2 class = "title" style = "text-align: center">Education History</h2>
 
@@ -137,7 +100,7 @@
     <!--    HOBBIES - START    -->
     <br><br><br><br><br><br><br><br><hr><br>
 
-<section id="caroline_hobbies" class="portfolio-mf sect-pt4 route text-white bg-dark">
+<section id="caroline_hobbies" class="portfolio-mf sect-pt4 route">
     <br><br><br><br><br><br><br><br><br>
     <h2 class = "title" style = "text-align: center">Hobbies</h2>
     <p class = "title" style = "text-align: center">Want to learn what Caroline does for fun? <br> click <a href = "/caroline_hobbies"> here </a>to find out</p>
