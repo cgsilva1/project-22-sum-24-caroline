@@ -4,7 +4,7 @@
 tmux kill-server
 
 #cd into project folder 
-cd project-22-SUM-24-CAROLINE
+cd project-22-sum-24-caroline
 
 #make sure ou have latest upates of git repository
 #git fetch && git reset origin/main --hard
@@ -18,10 +18,8 @@ export FLASK_ENV=“development”
 #enters the python virtual environment 
 #starts the Flask server.
 
-#dnf install tmux #dont know if i need this 
 #tmux new #dont know if i need this 
 source python3-virtualenv/bin/activate
 pip install -r requirements.txt
 export FLASK_ENV=“development”
 tmux new-session -d -s portfolio_session 'flask run --host=0.0.0.0'
-flask run
