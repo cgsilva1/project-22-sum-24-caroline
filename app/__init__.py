@@ -35,7 +35,7 @@ mydb.create_tables([TimelinePost])
 # pages routes
 @app.route('/')
 def index():
-    return render_template('workex_ed_caroline.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('workex_ed_caroline.html', title="Caroline Silva", url=os.getenv("URL"))
 
 @app.route('/hobbies')
 def hobbies():
