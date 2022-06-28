@@ -14,6 +14,6 @@ source python3-virtualenv/bin/activate
 pip install -r requirements.txt
 export FLASK_ENV=“development”
 
-#Restart myportfolio service
+#Restart myportfolio service 
 systemctl daemon-reload
 systemctl restart myportfolio 
