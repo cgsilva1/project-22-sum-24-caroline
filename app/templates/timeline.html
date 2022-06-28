@@ -70,7 +70,7 @@
     <input name="email" type="email">
     <label>Content: </label>
     <input name="content" type="text">
-    <button type="submit">Submit</button>
+    <button type="submit" onClick="refreshPage()">Submit</button>
 </form> 
 
 <br><br><br>
@@ -89,6 +89,11 @@
 
 <script>
 const form = document.getElementById('form');
+
+//to refresh page when clicked submit
+    function refreshPage(){
+    window. location. reload();
+    }
 
 form.addEventListener('submit', function(e) {
     // Prevent default behavior:
@@ -161,6 +166,8 @@ for (let r of data.timeline_posts) {
 // Setting innerHTML as tab variable
 document.getElementById("posts").innerHTML = tab;
 }
+
+
 </script>
 
 <!-- display timeline posts in descending order -->

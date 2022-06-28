@@ -1,8 +1,5 @@
 #!/bin/sh
 
-#kill all existing tmux sessions
-tmux kill-server
-
 #cd into project folder 
 cd project-22-sum-24-caroline
 
