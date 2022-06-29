@@ -14,3 +14,5 @@ export FLASK_ENV=“development”
 #Restart myportfolio service 
 systemctl daemon-reload
 systemctl restart myportfolio 
+
+flask run
