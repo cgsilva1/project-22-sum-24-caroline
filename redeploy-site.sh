@@ -15,4 +15,4 @@ export FLASK_ENV=“development”
 systemctl daemon-reload
 systemctl restart myportfolio 
 
-flask run --host=0.0.0.0
+flask run
