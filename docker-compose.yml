@@ -8,8 +8,8 @@ services:  #Define a list of services
             - .env
         #environment:
         #    - FLASK_ENV=development
-        ports:  #Publish port 5000 to the host machine
-            - "5000:5000"
+        #ports:  #Publish port 5000 to the host machine
+        #    - "5000:5000"
         #volumes:  #Map the files on your machine into the container at /myportfolio. This is used for development only.
         #    - .:/myportfolio
         depends_on:  #Specify that myportfolio service should start after mysql service is up
