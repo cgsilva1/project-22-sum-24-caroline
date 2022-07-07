@@ -8,8 +8,8 @@ services:  #Define a list of services
             - .env
         #environment:
         #    - FLASK_ENV=development
-        ports:  #Publish port 5000 to the host machine
-            - "5000:5000"
+        #ports:  #Publish port 5000 to the host machine
+        #    - "5000:5000"
         #volumes:  #Map the files on your machine into the container at /myportfolio. This is used for development only.
         #    - .:/myportfolio
         depends_on:  #Specify that myportfolio service should start after mysql service is up
@@ -23,6 +23,21 @@ services:  #Define a list of services
             - .env
         volumes:  #Define a named volume called mydatabase which will be persisted even if containers are recreated in the future
             - mydatabase:/var/lib/mysql
+    mginx:
+        container_name: nginx
+        image: jonasal/nginx-certbot
+        restart: always
+        environment: 
+            - CERTBOT_EMAIL=cgsilva@usc.edu
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - nginx_secrets:/etc/letsencrypt
+            - ./user_conf.d:/etc/nginx/user_conf.d
+        depends_on:
+            - myportfolio
 
 volumes:
     mydatabase:
+    nginx_secrets:
