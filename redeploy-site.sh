@@ -20,4 +20,4 @@ docker compose -f docker-compose.prod.yml up -d --build
 #systemctl restart myportfolio 
 
 
-#flask run --host=0.0.0.0
+flask run --host=0.0.0.0
