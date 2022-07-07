@@ -19,4 +19,5 @@ docker compose -f docker-compose.prod.yml up -d --build
 #systemctl daemon-reload
 #systemctl restart myportfolio 
 
+
 #flask run --host=0.0.0.0
