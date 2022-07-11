@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:description" content="My Personal Portfolio">
+    <meta property="og:url" content="{{ url }}">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link lang='sass' rel="stylesheet" href="./static/styles/user1.css">
+    <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
+    <title>Contact Me Page</title> 
+    
+</head>
+    
+<body>
+    <!--  NAV BAR - START -->
+
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="/">Caroline Silva</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#we">Experience</a></li>
+                <li><a href="#ed">Education</a></li>
+                <li><a href="/hobbies">Hobbies</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+<section id="caroline_resume" class="portfolio-mf sect-pt4 route">
+    <br><br><br><br><br><br><br><br><br>
+    <h2 class = "title" style = "text-align: center">Resume</h2>
+    <p class = "title" style = "text-align: center">Click <a href = "https://drive.google.com/file/d/1buyGosR26AfMSU65kDVVt1vUdxibyKqA/view?usp=sharing"> here </a> if you want to download a PDF version of my resume </p>
+    <img style = "height: 1000px; width: 600px; align-items: center;" src="./static/img/Silva_resume.pdf">
+</section>
+
+</body>
+</html>
