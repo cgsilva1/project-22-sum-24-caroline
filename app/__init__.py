@@ -57,7 +57,7 @@ def projects():
     return render_template('projects_template.html', title="Projects", url=os.getenv("URL"))
 
 @app.route('/resume')
-def contact():
+def resume():
     return render_template('resume.html', title="Resume", url=os.getenv("URL"))
 
 @app.route('/contact')
