@@ -1,0 +1,31 @@
+name: Run Tests #define name of Github Actions Workflow
+on: #trigger GithIb Actions Workflow on push or PR to main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs: #Create a job named Run Tests running on the latest supported Ubuntu VM
+  test:
+    runs-on: ubuntu-latest
+    name: Run Tests
+    env:  #addan environment variable necessary to run our tests
+      TESTING: true
+    steps: #Define steps to run tests, from checking out the repo, setting up python & python virtual environment, install dependencies, and lastly, run the tests
+      - name: Checkout Repository 
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@4
+        with:
+          python-version: '2.7.18'
+
+      - name: Setup Python Virtual Environemnt
+        run: python -m venv python3-virtualenv
+
+      - name: Install Dependencies
+        run: python3-virtualenv/bin/pip install -r requirements.txt
+
+      - name: Run Tests
+        run: ./run_tests.sh
