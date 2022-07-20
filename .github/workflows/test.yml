@@ -28,4 +28,4 @@ jobs: #Create a job named Run Tests running on the latest supported Ubuntu VM
         run: python3-virtualenv/bin/pip install -r requirements.txt
 
       - name: Run Tests
-        run: ./run_tests.sh
+        run: ./run_test.sh
